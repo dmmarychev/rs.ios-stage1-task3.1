@@ -12,6 +12,8 @@
     NSUInteger currentDegree = [numbers count] - 1;
     NSUInteger lastNumberIndex = [numbers count] - 1;
     
+    [[numbers firstObject] intValue] < 0 ? [result appendString:@"-"] : 0;
+    
     for (int i = 0; i < [numbers count]; i++) {
         
         int currentPositiveNumberValue = abs([[numbers objectAtIndex:i] intValue]);
